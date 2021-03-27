@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products|RedStore</title>
+    <link rel="stylesheet" href="assets/css/product-details.css">
+              <!-- professional links -->
+              <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+                 
+              <!-- font awesome up -->
+   
+</head>
+<body>
+    <header>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.png" width="120px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">   
+                        <li><a href="index.html"> Home</a>   </li>
+                        <li><a href="product.html"> Product</a> <li>
+                        <li><a href=""> About</a>  </li>
+                        <li><a href=""> Contact</a></li>
+                        <li><a href=""> Account</a></li>
+                </ul>
+            </nav>
+                <a href="cart.html"><img src="assets/images/cart.png" width="30px" height="30px"></a>
+                <img src="assets/images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div> 
+    </div>
+
+</header>
+
+
+      <!-- Single Product Details-->
+
+
+ <div class="small-container">
+
+  <div class="row-1">
+     
+    <div class="col-01"> 
+       <img src="assets/images/product-2.jpg" id="ProductImg"> 
+
+    </div>
+    <div class="col-02"> 
+        <h4>Home/ T-Shirt</h4>
+        <h1>Red Printed T-Shirt <br> By HRX</h1>
+        <p>$120.00</p>
+        <select >
+
+            <option>Select Size</option>
+            <option>XXXL</option>
+            <option>XL</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Larger</option>
+        </select>
+        <input type="number" value="1">
+    
+        <div class="button"> Add To Cart </div>
+    <h3>Product Details <i class="fas fa-indent"></i></h3>
+    </div>
+</div>
+  <div class="row-2">
+    <div class="col-03">
+    <div class="productimg">
+        <img src="assets/images/product-2.jpg"class="small-img">    
+        <img src="assets/images/product-2.jpg"class="small-img">    
+        <img src="assets/images/product-2.jpg"class="small-img">    
+        <img src="assets/images/product-2.jpg"class="small-img">    
+    </div>
+    </div>
+    
+    <div class="col-04">
+        <p>Black su-robin sit amet consectetur adipisicing elit. Ut nesciunt quas illo totam explicabo asperiores.</p>
+    </div>
+</div>
+</div>
+
+
+</div>
+
+
+<!-- -------------Footer----------  -->
+
+<div class="footer">
+    <div class="row">
+        <div class="col-6">
+            <h4>Download Our App</h4>
+            <p>Lorem ipsum dolor, sit amet consect.</p>
+            <img src="assets/images/app-store.png">
+            <img src="assets/images/play-store.png">
+        </div>
+
+        <div class="col-6">
+            <a href="index.html"><img src="assets/images/logo-white.png"></a>
+            <p> Tvoluptas est quo natus beatae consequatur.</p>
+        </div>
+
+        <div class="col-6">
+            <h4>Usefull Links</h4>
+            <ul>
+                <li><a href="https://www.google.com/" target="blank" style="text-decoration: none; color:LightGrey ;">Coupons</a></li>
+                <li><a href="https://www.google.com/" target="blank" style="text-decoration: none; color:LightGrey ;">   Blog Post</a></li>
+                <li><a href="https://www.google.com/" target="blank" style="text-decoration: none; color:LightGrey ;">Return Policy</a></li>
+                <li><a href="https://www.google.com/" target="blank" style="text-decoration: none; color:LightGrey ;">Join Affiliate</a></li>
+       
+            </ul>
+        </div>
+
+        <div class="col-6">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/SHAB.UDDIN.RAYHAN/" target="blank" style="text-decoration: none; color:LightGrey ;">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="blank" style="text-decoration: none; color:LightGrey ;">Instagram</a></li>
+                <li><a href="https://twitter.com/" target="blank" style="text-decoration: none; color:LightGrey ;">Twitter</a></li>
+                <li><a href="https://www.youtube.com/" target="blank" style="text-decoration: none; color:LightGrey ;">YouTube</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">CopyRight By &copy;  Shab Uddin Rayhan (SU RoBiN) </p>
+
+    </div>
+
+<!-- -----------------JS for Toggle Menu-------------- -->
+<script>
+    var MenuItmes = document.getElementById("MenuItems");
+    MenuItmes.style.maxHeight ="0px";
+    function menutoggle(){
+        if( MenuItmes.style.maxHeight =="0px")
+        {
+            MenuItmes.style.maxHeight ="200px";
+        }
+        else
+        {
+            MenuItmes.style.maxHeight ="0px";
+        }
+    }
+</script>
+
+<!--------JS for Single Product-------->
+
+<script>
+    var ProductImg= document.getElementById("ProductImg");
+    var SmallImg= document.getElementsByClassName("small-img");
+    
+SmallImg[0].onclick =  function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+SmallImg[1].onclick =  function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+SmallImg[2].onclick =  function()
+    {
+        ProductImg.src = SmallImg[2].src;
+    }    
+SmallImg[3].onclick =  function()
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>
